@@ -1,0 +1,180 @@
+body {
+  /*color: var(--color-text);*/
+  --font-standard: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Roboto,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  /*font-family: var(--font-standard);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);*/
+  --size-rounded-xs: 0.5rem;
+  --size-rounded-sm: 0.75rem;
+  --size-rounded-md: 1rem;
+  --size-rounded-lg: 1.25rem;
+  --size-rounded-max: 999999999px;
+  --size-rounded-card: 1rem;
+  --size-rounded-icon: 1rem;
+  --size-rounded-control: 0.25rem;
+  --size-rounded-tooltip: 0.25rem;
+  --size-navbar-height: 3.5rem;
+  --size-mobile-navbar-height: 4rem;
+  --spacing-card-lg: 1.5rem;
+  --spacing-card-bg: 1rem;
+  --spacing-card-md: 0.75rem;
+  --spacing-card-sm: 0.5rem;
+  --font-size-xxs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-nm: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-text: var(--font-weight-medium);
+  --font-weight-heading: var(--font-weight-extrabold);
+  --font-weight-title: var(--font-weight-extrabold);
+}
+
+.dark-mode, .oled-mode {
+  --color-icon: #96a2b0;
+  --color-text: #b0bac5;
+  --color-text-inactive: #929aa3;
+  --color-text-dark: #ecf9fb;
+  --color-heading: #c4cfdd;
+  --color-bg: #16181c;
+  --color-raised-bg: #26292f;
+  --color-divider: #474b54;
+  --color-divider-dark: #646c75;
+  --color-text-inverted: var(--color-bg);
+  --color-bg-inverted: var(--color-text);
+  --color-brand: #1bd96a;
+  --color-brand-hover: #30b366;
+  --color-brand-active: #55f5ae;
+  --color-brand-light: #30b27b;
+  --color-brand-inverted: #000;
+  --color-brand-2: #30b27b;
+  --color-brand-3: #30b27b;
+  --color-brand-disabled: #414146;
+  --color-button-bg: #3e434b;
+  --color-button-text: var(--color-text);
+  --color-button-bg-hover: #494f58;
+  --color-button-text-hover: #fff;
+  --color-button-bg-active: #616570;
+  --color-button-text-active: var(--color-button-text-hover);
+  --color-button-text-disabled: #797979;
+  --color-transparent-button-bg-hover: var(--color-button-bg);
+  --color-transparent-button-text-hover: var(--color-text-dark);
+  --color-transparent-button-bg-active: var(--color-button-bg-hover);
+  --color-transparent-button-text-active: var(--color-text-dark);
+  --color-dropdown-bg: var(--color-button-bg);
+  --color-dropdown-text: var(--color-button-text);
+  --color-category-bg: var(--color-button-bg);
+  --color-category-text: var(--color-text-dark);
+  --color-tooltip-bg: var(--color-text);
+  --color-tooltip-text: var(--color-bg);
+  --color-code-bg: var(--color-button-bg);
+  --color-code-text: var(--color-text-dark);
+  --color-ad: #2c323a;
+  --shadow-dropdown: 3px 3px 14px rgba(0,0,0,0.15);
+  --shadow-dropdown-strong: 3px 3px 20px rgba(0,0,0,0.15);
+  --shadow-tooltip: 0.2rem 0.2rem 10px rgba(0,0,0,0.15);
+  --color-link: #4793d9;
+  --color-badge-gray-bg: #646161;
+  --color-badge-gray-text: #c8c1c1;
+  --color-badge-red-text: #bd1a48;
+  --color-badge-red-bg: #db3162;
+  --color-badge-green-text: #1ebb7b;
+  --color-badge-green-bg: #24a54e;
+  --color-badge-yellow-text: #dba22d;
+  --color-badge-yellow-bg: #f7bb43;
+  --color-block-quote: var(--color-code-bg);
+  --color-header-underline: var(--color-tooltip-text);
+  --color-hr: var(--color-text);
+  --color-table-border: #4f5864;
+  --color-table-alternate-row: #262a30;
+}
+
+
+splashimage {
+  background-image: url("https://cdn.glitch.com/d1ecc540-3be9-472b-8c8e-59054ee1cda4%2Fg6615.png?v=1615824394201");
+}
+
+
+modsection, modinfo, modname, modversion, moddescripton {
+  justify-content: center;
+}
+
+modsections {
+  display: flex;
+  flex-direction: row;
+  margin: 32px 32px 64px 32px;
+  width: auto;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+modsections * {
+  display: flex;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: translateZ(0px);
+  text-align: center;
+  overflow-wrap: initial;
+  overflow-x: initial;
+}
+
+modsection {
+  margin: 0 1% 32px 1%;
+  border-radius: 12px;
+  background-color: var(--modinfo-color);
+  align-items: start;
+  padding: 20px 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.24);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-property: box-shadow, transform;
+  cursor: pointer;
+  max-width: 50%;
+  flex: calc((100% - 64px - 3%) / 3);
+}
+
+modsection:hover {
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.23), 0 0 10px rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-property: box-shadow, transform;
+}
+
+modinfo {
+  width: 90%;
+  flex-direction: column;
+  max-width: 30vw;
+}
+
+modname {
+  font-size: 2em;
+}
+
+modversion {
+  margin-top: 8px;
+}
+
+/*modversion::before {
+  content: "v";
+}*/
+
+moddescripton {
+  margin-top: 18px;
+  word-wrap: anywhere;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

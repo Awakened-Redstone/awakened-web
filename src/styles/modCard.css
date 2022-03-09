@@ -1,0 +1,88 @@
+.frame > *, .frame {
+  color: var(--color-text);
+  font-family: var(--font-standard);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+}
+
+.frame {
+  background: var(--color-raised-bg);
+  width: calc(40% - var(--spacing-card-bg) * 2);
+  display: flex;
+  flex-direction: row;
+  padding: var(--spacing-card-bg);
+  min-height: var(--font-size-2xl);
+  border-radius: var(--size-rounded-card);
+  margin-bottom: var(--spacing-card-md);
+  max-width: 480px;
+  
+  margin-right: 48px;
+  
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.12), 0 0 12px rgba(0, 0, 0, 0.24);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-property: box-shadow, transform;
+}
+
+.frame:hover {
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.23), 0 0 10px rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-property: box-shadow, transform;
+}
+
+.title {
+  margin: 0 0 .5rem 0;
+  color: var(--color-text-dark);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.modrinth-logo {
+  width: 6rem;
+}
+
+.items {
+  flex-direction: column;
+}
+
+.description {
+  text-align: start;
+}
+
+.version {
+  margin-top: 12px;
+  margin-right: 8px;
+  background-color: var(--color-badge-green-bg);
+  width: min-content;
+  color: white;
+  padding: 0 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.versions {
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.side {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: var(--font-size-sm);
+  margin-top: .125rem;
+  margin-bottom: .5rem;
+  white-space: nowrap;
+}
+
+.side > svg {
+  width: auto;
+  height: 1rem;
+  margin-right: .25rem;
+}
