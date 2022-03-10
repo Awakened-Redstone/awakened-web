@@ -1,10 +1,6 @@
 import * as React from "react";
 import Button from "../components/navbar/button.jsx";
 
-import makeAsyncScriptLoader from "react-async-script";
-import KoFi from "../components/ko-fi.jsx";
-const AsyncScriptComponent = makeAsyncScriptLoader("https://storage.ko-fi.com/cdn/scripts/overlay-widget.js")(KoFi);
-const onLoad = () => console.log("script loaded")
 
 export default function Home() {
   return (
@@ -28,7 +24,6 @@ export default function Home() {
           </section>
         </section>
       </content>
-      <AsyncScriptComponent asyncScriptOnLoad={onLoad} />
     </>
   );
 }

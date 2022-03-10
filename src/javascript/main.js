@@ -6,10 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     nativeScrollbarsOverlaid: { initialize: false },
   });
   
-  kofiWidgetOverlay.draw("awakenedredstone", {
-    type: "floating-chat",
-    "floating-chat.donateButton.text": "Support me",
-    "floating-chat.donateButton.background-color": "#323842",
-    "floating-chat.donateButton.text-color": "#fff",
-  });
+  setTimeout(() => {
+    kofiWidgetOverlay.draw("awakenedredstone", {
+      type: "floating-chat",
+      "floating-chat.donateButton.text": "Support me",
+      "floating-chat.donateButton.background-color": "#323842",
+      "floating-chat.donateButton.text-color": "#fff",
+    });
+  }, 0);
 });
