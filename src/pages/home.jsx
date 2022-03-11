@@ -1,6 +1,7 @@
 import * as React from "react";
 import Button from "../components/navbar/button.jsx";
 
+
 export default function Home() {
   return (
     <>

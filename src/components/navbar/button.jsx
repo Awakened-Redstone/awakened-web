@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Button(props) {
   return (
     <>
-      <a href={props.link}
+      <Link reloadDocument
+        to={props.link}
         className={props.icon ? "hasIcon" : ""}
         style={{
           height: "100%",
@@ -19,15 +21,23 @@ export default function Button(props) {
           pointerEvents: "none",
           color: "inherit",
           textDecoration: "none"
-        }} noicon={props.noIcon || "false"}
-         target={props.newTab ? "_blank" : ""} rel={props.newTab ? "noopener noreferrer" : ""}>
-        {(props.icon ? 
-          <div style={{
+        }}
+        noicon={props.noIcon || "false"}
+        target={props.newTab ? "_blank" : ""}
+        rel={props.newTab ? "noopener noreferrer" : ""}
+      >
+        {props.icon ? (
+          <div
+            style={{
               backgroundImage: `url(${props.icon})`,
               paddingRight: props.padRight || "invalid"
-            }}></div> : "")}
+            }}
+          ></div>
+        ) : (
+          ""
+        )}
         {props.text}
-      </a>
+      </Link>
     </>
   );
 }

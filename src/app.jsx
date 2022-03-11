@@ -9,9 +9,15 @@ import Error404 from "./pages/404.jsx";
 
 import Seo from "./components/seo.jsx";
 
+//Import and apply external JS
+import "../plugins/OverlayScrollbars.js"
+
+
 // Import and apply CSS stylesheet
 import "./styles/styles.css";
 import "./javascript/main.js";
+import "../plugins/OverlayScrollbars.css"
+
 
 export default function App() {
   return (
