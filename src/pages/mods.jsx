@@ -31,7 +31,7 @@ function getMods() {
       var versionList = getJSON(`https://api.modrinth.com/v2/project/${project.id}/version`);
       var versions = [];
       versionList.forEach((version) => {
-        if (version.version_type == "release") {
+        if (version.version_type == "release" && !versions[0]) {
           versions[0] = version.version_number;
           versions[1] = version.game_versions[version.game_versions.length - 1];
           return;
