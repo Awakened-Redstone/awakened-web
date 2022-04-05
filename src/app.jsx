@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 
 
 // Import the Home page component
@@ -26,7 +26,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mods" element={<Mods />} />
-        <Route path="*" element={<Error404 />} />
+        
+        {/*Removes "index.html" since it doesn't exist for react redirect*/}
+        {/*This route has to always be the last one!*/}
+        <Route path="*" element={<Navigate to={useLocation().pathname.replace("index.html", "")} repalce/>} />
       </Routes>
     </>
   );

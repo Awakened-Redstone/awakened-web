@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+
+    <link rel="icon" type="image/png" sizes="120x120" href="https://cdn.glitch.com/d1ecc540-3be9-472b-8c8e-59054ee1cda4%2Fredstone.png" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&amp;display=swap" />
+    
+    <!-- Scollbar plugin -->
+<!--     <link type="text/css" href="/plugins/OverlayScrollbars.css" rel="stylesheet"/>
+    <script type="text/javascript" src="/plugins/OverlayScrollbars.js"></script> -->
+  </head>
+  <body class="theme-dark">
+    <noscript>
+      <style>
+        body > * {
+          margin-top: 48px !important;
+        }
+
+        content *,
+        content {
+          width: calc(100vw - 18px) !important;
+        }
+
+        .noscript {
+          text-align: center;
+          padding-top: 12px;
+          display: block;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background-color: rgb(33, 33, 33);
+          z-index: 1;
+          height: 48px;
+        }
+      </style>
+      <strong class="noscript"> For better experience please enable Javascript. </strong>
+    </noscript>
+    <div id="root">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+        
+        navbar {
+          display: none !important;
+        }
+        
+        .loading {
+          color: #fff;
+          display: inherit;
+          position: fixed;
+          width: 100%;
+          text-align: center;
+          margin: auto;
+          font-size: 96px;
+          font-family: sans-serif;
+          transition: inherit;
+          -moz-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          top: 50%;
+        }
+        
+        .background {
+          width: 100vw;
+          height: 100vh;
+          display: block;
+          background-color: rgb(33, 33, 33);
+        }
+      </style>
+      <span class="background"></span>
+      <span class="loading"></span>
+    </div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>
