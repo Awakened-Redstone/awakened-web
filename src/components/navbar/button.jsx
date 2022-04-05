@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Button(props) {
   return (
     <>
-      <Link reloadDocument
-        to={props.link}
+      <a href={props.link}
         className={props.icon ? "hasIcon" : ""}
         style={{
           height: "100%",
@@ -37,7 +35,7 @@ export default function Button(props) {
           ""
         )}
         {props.text}
-      </Link>
+      </a>
     </>
   );
 }
